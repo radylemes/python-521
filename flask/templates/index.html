@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	   <meta charset="utf-8">
+	   <title>Flask!</title>
+	   <link href="/static/style.css" typer="text/css" rel="stylesheet">
+   </head>
+   <body>
+	   <marquee><b>Flask! - {{nome}}</b></marquee>
+<!--	   <ul>
+		   {% for item in items %}
+		   <li>Item {{item}} </>
+		   {% endfor%}
+	   </ul>
+-->
+	   <table>
+		   <tr>
+		       <td>ID</td>
+		       <td>NOME</td>
+		   </tr>
+		   <tr>
+			<td>1</td>
+			<td>daniel</td>
+	           </tr>
+		   {% for u in usuarios %}
+		   <tr>
+		       <td>{{u.id}}</td>
+		       <td>{{u.nome}}</td>
+		   </tr>
+		   {% endfor %}
+	    </table>
+
+   </body>   
+</html>
+
